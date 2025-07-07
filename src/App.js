@@ -71,8 +71,8 @@ function App() {
         <section className="CV">
           <h2>CV</h2>
           <div className="cv-links">
-            <a href="/assets/cv-en.pdf" download target="_blank" rel="noopener noreferrer">English</a>
-            <a href="/assets/cv-ro.pdf" download target="_blank" rel="noopener noreferrer">Romanian</a>
+            <a href="https://drive.google.com/file/d/1tsr4kNKE5m8DiOY0sc6S2Ng8WT_JL825/view?usp=share_link" download target="_blank" rel="noopener noreferrer">English</a>
+            <a href="https://drive.google.com/file/d/1hjjAkcu6-_y9BHXteH-Ysd7r07hr6kl4/view?usp=share_link" download target="_blank" rel="noopener noreferrer">Romanian</a>
           </div>
         </section>
         <section className="contacts">
