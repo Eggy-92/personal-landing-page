@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  display: flex;
   min-height: 100vh;
+}
+
+.left {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ddd;
+}
+
+.right {
+  flex: 2;
+  padding: 40px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: #0077b5 1px solid;
+}
+
+.project,
+.contacts {
+  margin-bottom: 30px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.contacts li {
+  margin: 0;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.2s;
+}
+
+.contacts a:hover {
+  color: #0077b5;
+}
+
+/* Specific hover colors for each social link */
+.contacts a[href*="facebook.com"]:hover {
+  color: #026dfa; /* Facebook blue */
+}
+.contacts a[href*="linkedin.com"]:hover {
+  color: #186cc0b5; /* LinkedIn blue */
+}
+.contacts a[href*="instagram.com"]:hover {
+  color: #e15930; /* Instagram pink */
+}
+.bullet-icon {
+  margin-right: 10px;
+  color: #0077b5;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+/* Add to App.css */
+.profile-pic.large {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 1.5px 4px rgba(0,0,0,0.12);
+}
+
+.about-me {
+  margin: 45px;
+  text-align: center;
+  border: #33333380 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(179, 250, 168, 0.32);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12), 0 1.5px 4px rgba(0,0,0,0.08);
+}
+
+/* Add to App.css */
+.left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.CV {
+  margin-bottom: 30px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cv-links {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+  margin-top: 10px;
+}
+
+.cv-links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.08rem;
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: #f0f0f0;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.cv-links a:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  background: #e6e6e6;
+}
+
+.project-link {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.project-link:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+.project ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.project li {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    min-height: unset;
   }
-  to {
-    transform: rotate(360deg);
+  .left, .right {
+    width: 100%;
+    min-width: unset;
+    border: none;
+    padding: 20px 0;
+  }
+  .right {
+    padding: 20px;
+    border-left: none;
+    border-top: #0077b5 1px solid;
+  }
+  .profile-pic.large {
+    width: 180px;
+    height: 180px;
+  }
+  .about-me {
+    margin: 20px;
+    padding: 16px;
+  }
+  .cv-links {
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    max-width: 105px;
   }
 }
