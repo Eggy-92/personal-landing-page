@@ -28,7 +28,7 @@ body {
 .right {
   flex: 2;
   padding: 40px;
-  background-color: #d1cece;
+  background-color: #e5e0d7c5;
   display: flex;
   flex-direction: column;
   justify-content: center;
