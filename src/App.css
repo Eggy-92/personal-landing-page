@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .profile-pic {
@@ -28,11 +28,11 @@ body {
 .right {
   flex: 2;
   padding: 40px;
-  background-color: #fafafa;
+  background-color: #d1cece;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: #0077b5 1px solid;
+  /* border-left: #0077b5 1px solid; */
 }
 
 .project,
